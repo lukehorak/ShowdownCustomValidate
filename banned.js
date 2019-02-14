@@ -16,9 +16,9 @@ function setBans(){
       "double team",
       "minimize",
       "acupressure",
+      "extreme evoboost"
     ],
     "pokemon":[
-      "aegislash",
       "arceus",
       "darkrai",
       "deoxys",
@@ -28,13 +28,16 @@ function setBans(){
       "groudon",
       "ho-oh",
       "marshadow",
+      "magearna",
       "kyogre",
       "kyurem-w",
-      "landorus-i",
       "lugia",
       "lunala",
       "mewtwo",
-      "necrozma",
+      "naganadel",
+      "necrozma-dawn-wings",
+      "necrozma-dusk-mane",
+      "necrozma-ultra",
       "paklia",
       "rayquaza",
       "reshiram",
@@ -45,7 +48,8 @@ function setBans(){
       "zekrom",
       "zeraora",
       "tapu lele",
-      "pheromosa"
+      "pheromosa",
+      "zygarde"
     ],
     "items":[
       "adamant orb",
@@ -62,20 +66,23 @@ function setBans(){
       "salamencite",
       "red orb",
       "shock drive",
+      "kommonium z",
+      "lax incense",
+      "mawilite",
     ],
     "abilities":{
       "pokemon": {
-        "list":["greninja", "blaziken"],
+        "list":["greninja", "blaziken", "landorus"],
         "greninja":["battle bond","protean"],
-        "blaziken":["speed boost"]
+        "blaziken":["speed boost"],
+        "landorus":["sheer force"]
       },
       "general":[
         "arena trap",
         "moody",
         "power construct",
         "sand veil",
-        "shadow tag",
-        "speed boost"
+        "shadow tag"
       ]
     }
   }
