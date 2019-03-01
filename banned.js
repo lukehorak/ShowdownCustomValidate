@@ -71,9 +71,8 @@ function setBans(){
       "mawilite",
     ],
     "abilities":{
-      "pokemon": {
-        "list":["greninja", "blaziken", "landorus"],
-        "greninja":["battle bond","protean"],
+      "combos": {
+        "greninja": ["battle bond","protean"],
         "blaziken":["speed boost"],
         "landorus":["sheer force"]
       },

@@ -26,13 +26,14 @@ var abilityObj = teamchart.find('.setcell-ability').toArray();
 var abilitylist = new Array();
 
 for(item in monsObj){
-  abilitylist.push(abilityObj[item].lastChild.value + monsObj[item].lastChild.value)
+  let pair = [abilityObj[item].lastChild.value, monsObj[item].lastChild.value]
+  abilitylist.push(pair)
 }
 
 for (i in abilitylist){
   if(isAbilityBanned(abilitylist[i][0], abilitylist[i][1], banned.abilities)){
     isValid = false;
-    reason += "ability"
+    reason += `${abilitylist[i][1]} can't be used with ${abilitylist[i][0]}`
   }
 };
 

@@ -6,15 +6,15 @@ function isBanned(thing,list){
   return result;
 }
 
-function isAbilityBanned(ability,mon,list){
+function isAbilityBanned(ability, mon, abilities){
   result = false;
-  if(list.pokemon.list.indexOf(mon.toLowerCase()) > -1){
-    if(list.pokemon[mon.toLowerCase()].indexOf(ability.toLowerCase()) > -1){
+  if(mon.toLowerCase() in abilities.combos){
+    if(abilities.combos[mon.toLowerCase()].includes(ability.toLowerCase())){
       result = true;
     }
   }
   else{
-    if(list.general.indexOf(ability.toLowerCase()) > 1){
+    if(abilities.general.indexOf(ability.toLowerCase()) > 1){
       result = true;
     }
   }
