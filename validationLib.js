@@ -20,3 +20,33 @@ function isAbilityBanned(ability, mon, abilities){
   }
   return result;
 }
+
+function isItemBanned(item, list, banMegas, banZ) {
+  let result = false;
+
+  if (banMegas && isMegaStone(item)){
+    return true;
+  }
+
+  if (banZ && isZCrystal(item)){
+    return true
+  }
+
+  if (list.indexOf(thing.toLowerCase()) > -1){
+    result = true;
+  }
+
+  return result;
+}
+
+// Helper Functions
+const isZCrystal = (item) => {
+  return /.+ium Z/.test(item)
+}
+
+const isMegaStone = (item) => {
+  const lowerItem = item.toLowerCase();
+  const eviolite = /eviolite/.test(lowerItem);
+  const test = /.+ite/.test(lowerItem);
+  return (!eviolite || test)
+}
