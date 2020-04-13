@@ -10,7 +10,7 @@
 	},
 	"content_scripts" : [{
 		"js": ["jquery-3.2.1.min.js", "banned.js", "validationLib.js"],
-		"matches": ["http://*/*", "https://*/*"]
+		"matches": ["http://play.pokemonshowdown.com/*", "https://play.pokemonshowdown.com/*"]
 	}],
 	"browser_action": {
 		"default_icon": "logo.png"
