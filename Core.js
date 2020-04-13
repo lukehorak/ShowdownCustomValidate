@@ -5,15 +5,16 @@ var abilitylist = new Array();
 var isValid = true;
 var reason = "";
 
+
+// Importing as result of function because chrome plugins play by their own rules
 var banned = setBans();
-
-var teamchart = $('.teamchart')
-
+var teamchart = $('.teamchart');
+var { banMegas, banZ } = banned.misc;
 
 // Mons
 var monsObj = teamchart.find('.setcell-pokemon').toArray();
 for (name in monsObj) {
-  var monName = monsObj[name].lastChild.value;
+  let monName = monsObj[name].lastChild.value;
   if(isBanned(monName, banned.pokemon)){
     isValid = false;
     reason += monName;
@@ -21,12 +22,11 @@ for (name in monsObj) {
 };
 
 // Ability
-// TODO - get mon/ability combo
 var abilityObj = teamchart.find('.setcell-ability').toArray();
-var abilitylist = new Array();
+//const abilitylist = new Array();
 
 for(item in monsObj){
-  let pair = [abilityObj[item].lastChild.value, monsObj[item].lastChild.value]
+  var pair = [abilityObj[item].lastChild.value, monsObj[item].lastChild.value]
   abilitylist.push(pair)
 }
 

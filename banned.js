@@ -1,22 +1,30 @@
 function setBans(){
   var banned = {
     "moves":[
+      "acupressure",
+      "double team",
+      "extreme evoboost",
+      "fissure",
       "flash",
+      "frustration",
+      "guillotine",
+      "hidden power",
+      "horn drill",
       "kinesis",
       "leaf tornado",
       "mirror shot",
+      "minimize",
       "mud bomb",
       "mud-slap",
       "muddy water",
       "night daze",
       "octazooka",
+      "pursuit",
+      "return",
       "sand attack",
       "secret power",
-      "smokescreen",
-      "double team",
-      "minimize",
-      "acupressure",
-      "extreme evoboost"
+      "sheer cold",
+      "smokescreen"
     ],
     "pokemon":[
       "arceus",
@@ -33,6 +41,8 @@ function setBans(){
       "kyurem-w",
       "lugia",
       "lunala",
+      "meltan",
+      "melmetal",
       "mewtwo",
       "naganadel",
       "necrozma-dawn-wings",
@@ -55,20 +65,21 @@ function setBans(){
       "adamant orb",
       "blazikenite",
       "blue orb",
+      "bright powder",
       "burn drive",
       "chill drive",
       "douse drive",
       "gengarite",
       "griseous orb",
+      "kommonium z",
+      "lax incense",
       "lucarionite",
       "lustrous orb",
+      "mawilite",
       "metagrossite",
       "salamencite",
       "red orb",
-      "shock drive",
-      "kommonium z",
-      "lax incense",
-      "mawilite",
+      "shock drive"
     ],
     "abilities":{
       "combos": {
@@ -77,12 +88,14 @@ function setBans(){
         "landorus":["sheer force"]
       },
       "general":[
-        "arena trap",
         "moody",
         "power construct",
-        "sand veil",
-        "shadow tag"
+        "sand veil"
       ]
+    },
+    "misc": {
+      "banZ": true,
+      "banMegas": true
     }
   }
 
